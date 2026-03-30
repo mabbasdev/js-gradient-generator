@@ -1,0 +1,218 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #f0efeb;
+    color: #1a1a1f;
+    font-family: poppins, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    background-image: radial-gradient(circle at 20% 20%, rgba(99, 68, 245, 0.06) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(245, 62, 107, 0.06) 0%, transparent 50%);
+}
+
+.card {
+    width: 100%;
+    max-width: 520px;
+    background: #ffffff;
+    border: 1px solid #e2e0da;
+    border-radius: 20px;
+    padding: 36px 32px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04), 0 12px 40px rgba(0, 0, 0, 0.08);
+}
+
+.header {
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+.tag {
+    display: inline-block;
+    font-family: 'Space Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #6344f5;
+    background: rgba(99, 68, 245, 0.08);
+    border: 1px solid rgba(99, 68, 245, 0.2);
+    padding: 4px 10px;
+    border-radius: 4px;
+    margin-bottom: 12px;
+}
+
+h1 {
+    font-size: 32px;
+    /* font-weight: 800; */
+    letter-spacing: -0.5px;
+    color: #1a1a1f;
+    line-height: 1.2;
+}
+
+h1 span {
+    background: linear-gradient(135deg, #6344f5, #f53e6b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.subtitle {
+    margin-top: 6px;
+    font-size: 13px;
+    color: #8f8d86;
+    font-weight: 400;
+}
+
+/* --- Buttons --- */
+.btn-row {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 28px;
+}
+
+.btn {
+    flex: 1;
+    padding: 13px 20px;
+    border-radius: 12px;
+    font-family: 'poppins', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    cursor: pointer;
+    transition: transform 0.15s, box-shadow 0.15s, background 0.15s;
+    letter-spacing: 0.01em;
+    border: none !important;
+    outline: none;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.btn:active {
+    transform: scale(0.97);
+}
+
+.btn-left {
+    background-color: #6344f5 !important;
+    color: #ffffff !important;
+    box-shadow: 0 4px 16px rgba(99, 68, 245, 0.35);
+}
+
+.btn-left:hover {
+    background-color: #5234e0 !important;
+    box-shadow: 0 6px 24px rgba(99, 68, 245, 0.48);
+}
+
+.btn-right {
+    background-color: #1a1a1f !important;
+    color: #ffffff !important;
+}
+
+.btn-right:hover {
+    background-color: #2e2e38 !important;
+}
+
+/* --- Preview --- */
+.preview-box {
+    width: 100%;
+    height: 250px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #282ad2, #77eaf1);
+    margin-bottom: 28px;
+    border: 1px solid #e2e0da;
+    transition: background 0.4s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.preview-box::after {
+    content: 'gradient preview';
+    position: absolute;
+    bottom: 10px;
+    right: 14px;
+    font-family: 'Space Mono', monospace;
+    font-size: 9px;
+    letter-spacing: 0.1em;
+    color: rgba(255, 255, 255, 0.5);
+    text-transform: uppercase;
+}
+
+/* --- Code Section --- */
+.code-section {
+    background: #f7f6f2;
+    border: 1px solid #e2e0da;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.code-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 16px;
+    border-bottom: 1px solid #e2e0da;
+    background: #fff;
+}
+
+.code-label {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #8f8d86;
+}
+
+/* Copy button — solid dark pill */
+.copy-btn {
+    background-color: #1a1a1f;
+    color: #ffffff;
+    border: none !important;
+    font-family: 'poppins', sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    padding: 6px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    transition: background 0.15s;
+    -webkit-appearance: none;
+    appearance: none;
+}
+ 
+.code-output {
+    padding: 16px;
+    font-family: 'Space Mono', monospace;
+    font-size: 14px;
+    line-height: 1.7;
+    color: #2d2d2d;
+    min-height: 64px;
+    word-break: break-all;
+}
+
+.dots {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+
+.dot:nth-child(1) {
+    background: #fca5a5;
+}
+
+.dot:nth-child(2) {
+    background: #fcd34d;
+}
+
+.dot:nth-child(3) {
+    background: #86efac;
+}

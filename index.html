@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gradient Generator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="card">
+
+        <div class="header">
+            <div class="tag">✦ CSS Tool</div>
+            <h1>Gradient <span>Generator</span></h1>
+            <p class="subtitle">Build linear gradients and grab the CSS instantly.</p>
+        </div>
+
+        <div class="btn-row">
+            <button class="btn btn-left" id="leftBtn">Left</button>
+            <button class="btn btn-right" id="rightBtn">Right</button>
+        </div>
+
+        <div class="preview-box" id="previewBox"></div>
+
+        <div class="code-section">
+            <div class="code-header">
+                <div style="display:flex;align-items:center;gap:10px;">
+                    <div class="dots">
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                    </div>
+                    <span class="code-label">Copy your code here</span>
+                </div>
+                <button class="copy-btn" id="copyBtn">Copy</button>
+            </div>
+            <div class="code-output" id="codeOutput">
+                <span style="color:#b0ada6">
+                    background: linear-gradient(135deg, #fff, #000);
+                </span>
+            </div>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
